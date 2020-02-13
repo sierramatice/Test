@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>STTR HIV Publications</title>
+		<link rel="shortcut icon" type="image/x-icon" href="STTR-HIV-32-icon.png" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>		
+		<header>
+				<div class="home two">
+					<a href="https://sttr-hiv.org/">Return Home</a>
+				</div>
+		</header>
+		<header class="blue"></header>
+		<section>
+			<div class="wide">	
+				<div class="logo">
+					<h1><img src="STTR-HIV-80.png" alt="Ribbon Icon STTR-HIV"/> Publications</h1>
+				</div>
+				<div class="home one">
+					<a href="https://sttr-hiv.org/">Return Home</a>
+				</div>
+			</div>
+			
+			<div id="content">
+				<h2 id="featured"> Featured Publications </h2>
+				<div class="slideshow-container">
+					<div class="slideshow-inner">
+					
+  						<div class="mySlides fade"> 
+							<div class="holds">
+								<img src="The Lancet (3-16).jpg" alt="Journal Cover"/> 
+								<div style="padding: 25px;">
+									<p>Solomon SS, Mehta SH, McFall AM, Srikrishnan AK, Saravanan S, Laeyendecker O, Balakrishnan P, Celentano DD, Solomon S, Lucas GM.</p>
+									<h2>Community viral load, antiretroviral therapy coverage, and HIV incidence in India: a cross-sectional, comparative study.</h2>
+									<p>The Lancet HIV [Internet]. 2016 Apr [cited 2016 Mar 15];</p>
+									<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4863069/">View Published Article</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="mySlides fade"> 
+							<div class="holds">
+								<img src="ajph.2015.105.issue-12.largecover.jpg" alt="Journal Cover"/> 
+								<div style="padding: 25px;">
+									<p>Chandler RK, Kahana SY, Fletcher B, Jones D, Finger MS, Aklin WM, Hamill K, Webb C.</p>
+									<h2>Data Collection and Harmonization in HIV Research: The Seek, Test, Treat, and Retain Initiative at the National Institute on Drug Abuse.</h2>
+									<p>Am J Public Health [Internet]. 2015 Dec [cited 2018 Jun 21];105(12):2416–22.</p>
+									<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4638253/">View Published Article</a>
+								</div>
+							</div>
+						</div>
+				
+						<div class="mySlides fade"> 
+							<div class="holds">
+								<img src="CID.jpg" alt="Journal Cover"/> 
+								<div style="padding: 25px;">
+									<p>Mehta SH, Lucas GM, Solomon S, Srikrishnan AK, McFall AM, Dhingra N, Nandagopal P, Kumar MS, Celentano DD, Solomon SS.</p>
+									<h2>HIV Care Continuum Among Men Who Have Sex With Men and Persons Who Inject Drugs in India: Barriers to Successful Engagement.</h2>
+									<p>Clin Infect Dis [Internet]. 2015 Dec 1 [cited 2017 Mar 13];61(11):1732–41.</p>
+									<a href="https://sttr-hiv.org/">View Published Article</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="mySlides fade">
+							<div class="holds">
+								<img src="JoPH.jpg" alt="Journal Cover"/> 
+								<div style="padding: 25px;">
+									<p>Beckwith CG, Kurth AE, Bazerman LB, Patry EJ, Cates A, Tran L, Noska A, Kuo I.</p>
+									<h2>A pilot study of rapid hepatitis C virus testing in the Rhode Island Department of Corrections.</h2>
+									<p>J Public Health (Oxf) [Internet]. 2016 Mar [cited 2017 Mar 13];38(1):130–7.</p>
+									<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4750523/">View Published Article</a>
+								</div>
+							</div>
+						</div>
+										<a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+  					<a class="next" onclick='plusSlides(1)'>&#10095;</a>
+				</div>
+					<br/>
+
+					<div style='text-align: center;'>
+					  <span class="dot" onclick='currentSlide(1)'></span>
+					  <span class="dot" onclick='currentSlide(2)'></span>
+					  <span class="dot" onclick='currentSlide(3)'></span>
+					  <span class="dot" onclick='currentSlide(4)'></span>
+					</div>		
+				</div>
+				
+				
+				<div>
+					<h2>STTR Consortium & Individual Grant Publications</h2>
+					<script src="https://bibbase.org/show?bib=http://bibbase.org/zotero-group/lober/427227&jsonp=1&authorFirst=1"></script>
+				</div>
+				
+				<img src="nida.png" id="NIH" alt="NIH National Institute on Drug Abuse, The Science of Drug Abuse & Addiction"/>
+	
+			</div>
+		</section>
+		
+		<footer>
+			<p></p>
+		</footer>
+	
+	</body>
+
+<script> 
+var slideIndex = 1;
+
+var myTimer;
+
+var slideshowContainer;
+
+// window.addEventListener("load",function() {
+//    showSlides(slideIndex);
+//    myTimer = setInterval(function(){plusSlides(1)}, 4000);
+  
+    //COMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+//    slideshowContainer = document.getElementsByClassName('slideshow-inner')[0];
+  
+    //UNCOMMENT OUT THE LINE BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+    // slideshowContainer = document.getElementsByClassName('slideshow-container')[0];
+  
+//    slideshowContainer.addEventListener('mouseenter', pause);
+//    slideshowContainer.addEventListener('mouseleave', resume);
+//})
+
+// NEXT AND PREVIOUS CONTROL
+function plusSlides(n){
+  clearInterval(myTimer);
+  if (n < 0){
+    showSlides(slideIndex -= 1);
+  } else {
+   showSlides(slideIndex += 1); 
+  }
+  
+  //COMMENT OUT THE LINES BELOW TO KEEP ARROWS PART OF MOUSEENTER PAUSE/RESUME
+  
+  if (n === -1){
+    myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+  } else {
+    myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  }
+}
+
+//Controls the current slide and resets interval if needed
+function currentSlide(n){
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n){
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+var pause = function ()  {  clearInterval(myTimer);
+}
+var resume = function () {
+  clearInterval(myTimer);
+  myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+}
+
+</script>
+</html>
